@@ -1,0 +1,9 @@
+app:
+    build: .
+    ports:
+      - "80:5000"
+    links:
+      - redis
+
+redis:
+    image: redis
